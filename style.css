@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*! HEADER --------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 10px 0 10px;
+}
+
+header h2 {
+    background: rgb(0, 88, 19);
+    padding: 0 5px 0 5px;
+    margin-top: -10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 3px;
+    color:grey;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 0px 10px 0;
+    font-size: 16px;
+    position: relative;
+    color: white;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/*! MAIN ------------------------------------------ */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92.8vh;
+    background: grey;
+}
+
+.main-div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    gap: 30px;
+}
+
+.main-div1 div h4 {
+    font-size: 30px;
+    color: rgb(0, 88, 19);
+    margin-bottom: 20px;
+    
+}
+
+.main-div1 h1, .main-div1 h2 {
+    font-size: 60px;
+    margin-top: -30px;
+    color: rgb(41, 41, 41)
+}
+
+.main-div1 p {
+    width: 700px;
+    color: rgb(73, 73, 73);
+}
+
+.main-div1 a button {
+    width: 110px;
+    height: 35px;
+}
+
+.main-div1 .button-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.button-box a button {
+    background: rgb(0, 88, 19);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding-left: 25px;
+    padding-right: 7px;
+    cursor: pointer;
+}
+
+.button-box a button:hover {
+    background: rgb(0, 153, 33);
+    
+}
+
+.button-box i {
+    position: absolute;
+    left: 375px;
+    top: 15%;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.main-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.main-div2 img {
+    width: 400px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 5px;
+}
+
+/*! SECTION 1 ----------------------------------------- */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+    gap: 40px;
+    background: white;
+}
+
+.section1-div1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.section1-img {
+    
+}
+
+.section1-img h2 {
+    background: rgb(0, 88, 19);
+    font-size: 80px;
+    padding: 0 13px 0 13px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 40px;
+    color: #e5e7eb;
+}
+
+.section1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.section1-text h2 {
+    font-size: 50px;
+    margin-bottom: -35px;
+    color: rgb(39, 39, 39);
+}
+
+.section1-text h3 {
+    font-size: 49px;
+    margin-bottom: -20px;
+    color: rgb(109, 109, 109);
+}
+
+.section1-text p {
+    font-size: 16.4px;
+    color: rgb(37, 37, 37);
+}
+
+.section1-div2 {
+    padding: 0 100px 0 100px;
+}
+
+.section1-div2 p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/*! SECTION 2 ------------------------------------ */
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    background: grey;
+}
+
+.section2 img {
+    width: 500px;
+}
+
+.section2 div {
+    padding: 40px 50px 40px 50px;
+}
+
+.section2 div p {
+    text-align: left;  
+}
+
+.section2 div h2 {
+    color: rgb(37, 37, 37);
+}
+
+#f1 {
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+}
+
+#f2 {
+    color: rgb(68, 68, 68);
+}
+
+#f3 {
+    color: rgb(189, 189, 189);
+}
+
+/*! FOOTER ------------------------------------------ */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0 50px 0;
+
+}
+
+footer a button {
+    width: 203px;
+    height: 35px;
+}
+
+footer .redes-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.redes-box a button {
+    background: rgb(0, 88, 19);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 1px;
+    cursor: pointer;
+}
+
+.redes-box a button:hover {
+    background: rgb(0, 153, 33);
+    
+}
+
+.redes-box i {
+    position: absolute;
+    left: 0px;
+    top: 65%;
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+} 
+
+.footer-div2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+/*
+
+
+
+
+
+
+
+
+
+
+*/
