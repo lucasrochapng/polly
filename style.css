@@ -220,6 +220,7 @@ main {
     display: flex;
     flex-direction: row;
     background: grey;
+
 }
 
 .section2 img {
@@ -261,6 +262,7 @@ main {
     text-align: justify;
     padding: 30px 30px 50px 30px;
     gap: 30px;
+    height: 100vh;
 }
 
 .section3 p {
@@ -408,4 +410,15 @@ footer .redes-box {
 hr {
     border-color: rgb(105, 105, 105);
     width: 1200px;
+}
+
+#animar-de-baixo {
+    opacity: 0;
+    transform: translateY(50px); /* Desloque 50px para baixo */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* Aqui você pode adicionar outras propriedades para estilizar a animação conforme desejado */
+}
+#animar-de-baixo.show {
+    opacity: 1;
+    transform: translateY(0); /* Desloque de volta para a posição original */
 }
