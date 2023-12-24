@@ -214,6 +214,15 @@ main {
     text-align: justify;
 }
 
+.section1-div2 p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.section1-div2 p a:hover {
+    text-decoration: underline;
+}
+
 /*! SECTION 2 ------------------------------------ */
 
 .section2 {
@@ -289,6 +298,15 @@ main {
 #img-adm {
     width: 100px;
     opacity: 0.6;
+}
+
+#trajetoria p a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#trajetoria p a:hover {
+    text-decoration: underline;
 }
 
 
